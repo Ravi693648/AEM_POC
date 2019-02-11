@@ -103,5 +103,11 @@
             <groupId>junit-addons</groupId>
             <artifactId>junit-addons</artifactId>
         </dependency>
+    <!-- Commons Email dependency-->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-email</artifactId>
+      <version>1.2</version>
+    </dependency>
     </dependencies>
 </project>
