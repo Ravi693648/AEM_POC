@@ -26,14 +26,14 @@
         <module>core</module>
         <module>ui.apps</module>
         <module>ui.content</module>
-        <module>it.tests</module>
-        <module>it.launcher</module>
+        <!--  module>it.tests</module>
+        <module>it.launcher</module>-->
     </modules>
 
     <properties>
-        <aem.host>localhost</aem.host>
+        <aem.host>sc1ucbgrcms02.cbgrus.pat</aem.host>
         <aem.port>4502</aem.port>
-        <aem.publish.host>localhost</aem.publish.host>
+        <aem.publish.host>sc1ucbgrcms02.cbgrus.pat</aem.publish.host>
         <aem.publish.port>4503</aem.publish.port>
         <sling.user>admin</sling.user>
         <sling.password>admin</sling.password>
@@ -480,7 +480,7 @@
             <dependency>
                 <groupId>com.adobe.aem</groupId>
                 <artifactId>uber-jar</artifactId>
-                <version>6.3.0</version>
+                <version>6.4.0</version>
                 <!--<classifier>apis</classifier>-->
                 <classifier>obfuscated-apis</classifier>
                 <scope>provided</scope>
@@ -557,6 +557,12 @@
                 <version>1.4</version>
                 <scope>test</scope>
             </dependency>
+    <!-- Commons Email dependency-->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-email</artifactId>
+      <version>1.2</version>
+    </dependency>
         </dependencies>
     </dependencyManagement>
 
